@@ -1,3 +1,5 @@
+package com.bruce.future;
+
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.FutureTask;
 

@@ -1,6 +1,6 @@
-import java.util.concurrent.locks.ReentrantLock;
+package com.bruce.lock;
 
-// package lock;
+import java.util.concurrent.locks.ReentrantLock;
 
 class Main {
     // Object o = new Object();
@@ -17,9 +17,9 @@ class Main {
             // lock.unlock();
         }).start();
         new Thread(() -> {
-                lock.lock();
-                System.out.println(555);
-                lock.unlock();
+            lock.lock();
+            System.out.println(555);
+            lock.unlock();
         }).start();
     }
 }
